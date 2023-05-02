@@ -4,6 +4,9 @@
 
 @layer base {
     body{
-        @apply text-xl
+        @apply text-xl font-libre-franklin
+    }
+    input::placeholder{
+        @apply text-sm
     }
 }
