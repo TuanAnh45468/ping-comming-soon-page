@@ -13,14 +13,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (emailValue === "") {
       errorEmptyEmail.classList.remove("hidden");
+      emailInput.classList.add("border-light-red");
       return;
     }
 
     if (!isValidEmail) {
       errorInvalidEmail.classList.remove("hidden");
+      emailInput.classList.add("border-light-red");
       return;
     }
 
     alert("Email submitted successfully!");
+    emailInput.classList.remove("border-light-red");
   });
 });
